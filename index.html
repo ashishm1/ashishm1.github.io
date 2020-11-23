@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>MU Question Paper Chatbot</title>
+</head>
+<body>
+<p>Question Paper Chatbot</p>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "5de1a806-5d98-4110-b83a-757dd0e6d2a5", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "b583a409-8d48-4d62-8f48-380efbc5c51e", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>
